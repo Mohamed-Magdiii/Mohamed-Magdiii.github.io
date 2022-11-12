@@ -18,8 +18,12 @@ const Navbar = () => {
     }
 
     const toggleNavbar = () => {
-      
         setMenu(!menu)
+      setTimeout(()=>{
+        if(router.locale === "ar"){
+       router.reload()
+      }
+      },60)
     }
 
     React.useEffect(() => {

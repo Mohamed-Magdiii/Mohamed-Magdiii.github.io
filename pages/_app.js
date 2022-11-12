@@ -13,24 +13,25 @@ import {useRouter} from 'next/router'
 // Global Style
 import "../styles/style.css";
 import "../styles/responsive.css";
-import '../styles/rtl.css'
+// import '../styles/rtl.css'
 
 import Layout from "../components/_App/Layout";
-import { Head } from 'next/head';
 
 const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
   React.useEffect(() => {
     AOS.init();
   }, []);
-  useEffect(() => {
-    router.locale === "en"
-    ? import("../styles/style.css")
-    : import("../styles/rtl.css")
-  }, [router.locale]);
+  useEffect(()=>{
+    handleStyle()
+  },[router.locale])
+  const handleStyle = ()=>{
+    if(router.locale === "ar"){
+        import('../styles/rtl.css')
+      }
+  }
   return (
     <>
-
     <Layout>
       <Component {...pageProps} />
     </Layout>
