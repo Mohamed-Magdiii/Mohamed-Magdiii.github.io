@@ -5,6 +5,8 @@ import Footer from '../components/_App/Footer';
 import Link from 'next/link';
 
 const Team = () => {
+    
+    
     return (
         <>
             <NavbarTwo />
@@ -251,12 +253,12 @@ const Team = () => {
                                             </a>
                                         </Link>
                                     </li>
-                                    <li className="page-item active">
+                                    <li className="page-item ">
                                         <Link href="#">
                                             <a className="page-link">1</a>
                                         </Link>
                                     </li>
-                                    <li className="page-item">
+                                    <li className="page-item active">
                                         <Link href="#">
                                             <a className="page-link">2</a>
                                         </Link>

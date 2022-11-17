@@ -9,8 +9,8 @@ import Navbar from './../components/_App/Navbar';
 const Contact = () => {
     return (
         <>
-            {/* <NavbarTwo /> */}
-                <Navbar/>
+            <NavbarTwo />
+                {/* <Navbar/> */}
 
             <PageBanner 
                 pageTitle="Contact" 

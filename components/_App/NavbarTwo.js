@@ -1,8 +1,13 @@
 import React from 'react';
 import Link from '../../utils/ActiveLink';
 import TopHeader from './TopHeader';
+import  useTranslation  from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 const NavbarTwo = () => {
+
+    const router= useRouter()
+    const {t} = useTranslation("common")
     const [menu, setMenu] = React.useState(true)
     const [sidebarModal, setSidebar] = React.useState(false)
     const [searchModal, setSearch] = React.useState(false)
@@ -43,7 +48,9 @@ const NavbarTwo = () => {
                             <div className="container">
                                 <Link href="/">
                                     <a onClick={toggleNavbar} className="navbar-brand">
-                                        <img src="/images/logo.png" alt="logo" />
+                                    {
+                                    router.locale === "ar" ? <img src="/images/logo-ar.png" alt="logo" /> : <img src="/images/logo.png" alt="logo" />
+                                    }
                                     </a>
                                 </Link>
 
@@ -65,13 +72,13 @@ const NavbarTwo = () => {
                                 <div className={classOne} id="navbarSupportedContent">
                                     <ul className="navbar-nav m-auto">
                                         <li className="nav-item">
-                                            <Link href="#" activeClassName="active">
-                                                <a onClick={e => e.preventDefault()} className="nav-link">
-                                                    Home <i className='bx bx-chevron-down'></i>
+                                            <Link href="/" activeClassName="active">
+                                                <a  className="nav-link">
+                                                    {t("home")} 
                                                 </a>
                                             </Link>
 
-                                            <ul className="dropdown-menu">
+                                            {/* <ul className="dropdown-menu">
                                                 <li className="nav-item">
                                                     <Link href="/" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">Home One</a>
@@ -107,7 +114,7 @@ const NavbarTwo = () => {
                                                         <a onClick={toggleNavbar} className="nav-link">Home Six</a>
                                                     </Link>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
 
                                         <li className="nav-item">

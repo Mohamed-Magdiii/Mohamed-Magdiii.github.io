@@ -16,12 +16,14 @@ import "../styles/responsive.css";
 // import '../styles/rtl.css'
 
 import Layout from "../components/_App/Layout";
-
 const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
   React.useEffect(() => {
     AOS.init();
   }, []);
+
+
+  
   useEffect(()=>{
     handleStyle()
   },[router.locale])

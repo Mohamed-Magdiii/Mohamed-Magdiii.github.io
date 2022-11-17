@@ -19,11 +19,13 @@ const Navbar = () => {
 
     const toggleNavbar = () => {
         setMenu(!menu)
+    }
+    const reloadTran = ()=>{
       setTimeout(()=>{
         if(router.locale === "ar"){
        router.reload()
       }
-      },60)
+      },200)
     }
 
     React.useEffect(() => {
@@ -52,7 +54,9 @@ const Navbar = () => {
                 <div className="container">
                   <Link href="/">
                     <a onClick={toggleNavbar} className="navbar-brand">
-                      <img src="/images/logo.png" alt="logo" />
+                      {
+                        router.locales === "ar " ? (<img src="/images/logo-ar.png" alt="logo" />) : <img src="/images/logo.png" alt="logo" />
+                      }
                     </a>
                   </Link>
 
@@ -92,7 +96,7 @@ const Navbar = () => {
                             </Link>
                           </li>
 
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                             <Link href="/index2" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 Home Two
@@ -122,15 +126,15 @@ const Navbar = () => {
                                 Home Five
                               </a>
                             </Link>
-                          </li>
+                          </li> */}
 
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                             <Link href="/index6" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 Home Six
                               </a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
 
@@ -470,14 +474,14 @@ const Navbar = () => {
                         <ul className="dropdown-menu">
                           <li className="nav-item">
                             <Link  href="/" locale="en">
-                              <a onClick={toggleNavbar} className="nav-link">
+                              <a onClick={()=>{reloadTran(); toggleNavbar()}} className="nav-link">
                                 English
                               </a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link  href="/"  locale="ar" >
-                              <a onClick={toggleNavbar} className="nav-link">
+                              <a onClick={()=>{reloadTran(); toggleNavbar()}} className="nav-link">
                                 Arabic
                               </a>
                             </Link>
