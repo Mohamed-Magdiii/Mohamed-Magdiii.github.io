@@ -34,7 +34,7 @@ const TopHeader = () => {
                             </li>
 
                             <li>
-                                <a href="mailto:hello@flexa.com">
+                                <a href="mailto:Otic@alfuttaim.com">
                                     <i className="bx bx-envelope"></i>
                                     {t("Email")}: Otic@alfuttaim.com
                                 </a>

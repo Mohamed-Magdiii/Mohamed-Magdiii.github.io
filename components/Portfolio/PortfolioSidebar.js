@@ -35,8 +35,8 @@ const PortfolioSidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:hello@flexa.com">
-                            hello@flexa.com
+                        <a href="mailto:Otic@alfuttaim.com">
+                        Otic@alfuttaim.com
                             <i className='bx bx-envelope'></i>
                         </a>
                     </li>

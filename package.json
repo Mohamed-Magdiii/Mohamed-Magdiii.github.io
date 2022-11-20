@@ -1,7 +1,7 @@
 {
     "name": "flexa",
     "version": "1.7.0",
-    "description": "Flexa - Insurance & Banking Finance Company React Template",
+    "description": "Orient Insurance",
     "main": "index.js",
     "scripts": {
         "dev": "next dev",

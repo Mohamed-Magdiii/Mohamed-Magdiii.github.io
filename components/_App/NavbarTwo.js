@@ -49,7 +49,7 @@ const NavbarTwo = () => {
                                 <Link href="/">
                                     <a onClick={toggleNavbar} className="navbar-brand">
                                     {
-                                    router.locale === "ar" ? <img src="/images/logo-ar.png" alt="logo" /> : <img src="/images/logo.png" alt="logo" />
+                                    router.locale === "ar" ? <img src="/images/logo-ar.png" alt="logo" width={150} height={50}/> : <img src="/images/logo.png" alt="logo" width={150} height={50} />
                                     }
                                     </a>
                                 </Link>
@@ -442,7 +442,7 @@ const NavbarTwo = () => {
                                         <li>
                                             <i className="bx bx-envelope"></i>
                                             Email
-                                            <a href="mailto:hello@flexa.com">hello@flexa.com</a>
+                                            <a href="mailto:Otic@alfuttaim.com">Otic@alfuttaim.com</a>
                                         </li>
                                         <li>
                                             <i className="bx bxs-phone-call"></i>

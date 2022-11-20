@@ -57,8 +57,8 @@ const Footer = () => {
                                     <li>
                                         <i className="flaticon-email"></i>
                                         <span>Email:</span> 
-                                        <a href="mailto:hello@flexa.com">
-                                            hello@flexa.com
+                                        <a href="mailto:Otic@alfuttaim.com">
+                                            Otic@alfuttaim.com
                                         </a>
                                     </li>
                                     
@@ -133,7 +133,7 @@ const Footer = () => {
             <div className="footer-bottom-area footer-bottom-electronics-area">
                 <div className="container">
                     <div className="copy-right">
-                        <p>Copyright &copy;{currentYear} Flexa Designed By <a href="https://envytheme.com/" target="blank">EnvyTheme</a></p>
+                        <p>Copyright &copy;{currentYear} Orient Designed By <a href="https://envytheme.com/" target="blank">EnvyTheme</a></p>
                     </div>
                 </div>
             </div>

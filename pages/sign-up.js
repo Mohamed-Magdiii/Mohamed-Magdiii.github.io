@@ -79,7 +79,7 @@ const SignUp = () => {
                                             <div className="agree-label">
                                                 <input type="checkbox" id="chb1" />
                                                 <label htmlFor="chb1">
-                                                    I agree with flexa 
+                                                    I agree with orient 
                                                     <Link href="/privacy-policy">
                                                         <a>Privacy Policy</a>
                                                     </Link>
@@ -88,7 +88,7 @@ const SignUp = () => {
                                             <div className="agree-label">
                                                 <input type="checkbox" id="chb2" />
                                                 <label htmlFor="chb2">
-                                                    I agree with flexa 
+                                                    I agree with orient 
                                                     <Link href="/terms-conditions">
                                                         <a>Terms & Conditions</a>
                                                     </Link>
