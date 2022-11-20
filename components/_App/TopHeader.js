@@ -11,7 +11,7 @@ const TopHeader = () => {
             if(router.locale === "ar"){
                 router.reload()
                }
-        },200)
+        },100)
 
       }
     return (
