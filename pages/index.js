@@ -20,7 +20,7 @@ const Index2 = () => {
 
             <MainBanner />
 
-            <OurFeatures />
+            {/* <OurFeatures /> */}
 
             <AboutUs />
 

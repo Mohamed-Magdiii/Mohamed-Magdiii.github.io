@@ -8,11 +8,11 @@ const AboutUsContent = () => {
 					<div className="col-lg-6">
 						<div className="about-content">
 							<span>About Us</span>
-							<h2>We have been Thriving in 37 Years The Area</h2>
+							<h2>ORIENT INSURANCE – EGYPT</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>	
+							<p>Orient Takaful Insurance Egypt is an affiliate company of the UAE based Orient Insurance PJSC which is the market leader in UAE and operating in 7 countries and 100% owned by Al Futtaim business group. Orient Takaful Insurance Egypt is an Egyptian shareholding company subject to the provisions of Law No. 10 of 1981 and its amendments and has a license No. (30) from the General Authority for Financial Control. It is also worth to mention that our mother company is “A” rated by both S&P and AM Best. Orient Takaful Insurance Egypt is a Joint Venture between Orient PJSC and 2 UAE based banks operating in Egypt.</p>	
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.</p>
+							<p>We have started our operation in Egypt in 2009 and are writing all lines of non-life business Including medical. Orient Takaful Insurance Egypt is now ranked No.1 in Takaful market & No.4 in the Egyptian Market Non-life insurance market.</p>
 
 							<div className="about-list">
 								<ul>
@@ -24,22 +24,7 @@ const AboutUsContent = () => {
 										<i className="flaticon-checked"></i>
 										Fast Application
 									</li>
-									<li>
-										<i className="flaticon-checked"></i>
-										Flexible Insurance
-									</li>
-									<li>
-										<i className="flaticon-checked"></i>
-										No Brokers, No Upselling
-									</li>
-									<li>
-										<i className="flaticon-checked"></i>
-										Investment Planning
-									</li>
-									<li>
-										<i className="flaticon-checked"></i>
-										Professional Advisor
-									</li>
+									
 								</ul>
 							</div>
 						</div>

@@ -1,4 +1,4 @@
-const Pagination = ({ dataPerPage, totalData, paginate }) => {
+const Pagination = ({ dataPerPage, totalData, paginate,currentPage }) => {
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalData / dataPerPage); i++) {
     pageNumbers.push(i);
@@ -9,15 +9,15 @@ const Pagination = ({ dataPerPage, totalData, paginate }) => {
         <div className="page-navigation-area text-center">
           <ul className="pagination">
             {" "}
-            <li className="page-item">
+            {/* <li className="page-item">
               <div >
                 <a className="page-link page-links">
                   <i className="bx bx-chevrons-left"></i>
                 </a>
               </div>
-            </li>
+            </li> */}
             {pageNumbers.map((number) => (
-              <li className="page-item active" key={number}>
+              <li className={`page-item ${currentPage === number ? 'active' : ''}`} key={number}>
                 <div
                   
                   onClick={() => {
@@ -28,13 +28,13 @@ const Pagination = ({ dataPerPage, totalData, paginate }) => {
                 </div>
               </li>
             ))}
-            <li className="page-item">
+            {/* <li className="page-item">
               <div >
                 <a className="page-link">
                   <i className="bx bx-chevrons-right"></i>
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -41,12 +41,12 @@ const TopHeader = () => {
                             </li>
                             <li>
                             {router.locale === "ar" ? 
-                            (<Link  href="/" locale="en">
+                            (<Link  href="" locale="en">
                               <a onClick={()=>reloadTran()} className="nav-link">
                                 En
                               </a>
                             </Link>) : 
-                            (<Link  href="/" locale="ar">
+                            (<Link  href="" locale="ar">
                             <a onClick={()=>reloadTran()} className="nav-link">
                               ع
                             </a>

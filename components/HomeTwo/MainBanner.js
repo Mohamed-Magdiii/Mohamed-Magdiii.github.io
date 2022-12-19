@@ -22,7 +22,7 @@ const MainBanner = () => {
                 data-aos-duration="1200"
                 data-aos-once="true"
               >
-                Take The Worry Out of Life with Insurance Protection
+                Get Insurance For Almost Anything You Need
               </h1>
 
               <p
@@ -31,9 +31,7 @@ const MainBanner = () => {
                 data-aos-duration="1200"
                 data-aos-once="true"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum.
+               Protection thorugh one of the best insurance companies
               </p>
 
               <div
