@@ -10,10 +10,10 @@ const AboutUsContentTwo = () => {
 							<span>About Us</span>
 							<h2>Insurance Always Ready to Protect your Life & Business</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>	
+							<p>Orient Takaful Insurance Company is the fastest growing insurance company in the Egyptian market with annual growth rate exceeding 30%, transacts non -life insurance business in Egypt.</p>	
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.</p>
-
+							<p>Orient Takaful Insurance Company follows the laws No. 10 for year 1981 and is registered in the Egyptian Financial Supervisory Authority (EFSA).</p>
+<p>Orient Takaful Insurance Company is committed to providing an outstanding and innovative insurance service through a variety of distribution channels including tied agents, direct agents and freelance brokers.</p>
 							<div className="about-list">
 								<div className="row">
 									<div className="col-lg-6">

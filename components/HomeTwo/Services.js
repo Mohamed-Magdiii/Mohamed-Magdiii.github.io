@@ -7,7 +7,7 @@ const Services = () => {
             <div className="container">
                 <div className="section-title">
                     <span>Our Services</span>
-                    <h2>Types of flexa Insurance</h2>
+                    <h2>Types of Orient Insurance</h2>
                     <p>Oppor ipsum suspendice consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mua. Quis ipsum suspendices gravida.</p>
                 </div>
 

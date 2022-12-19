@@ -14,7 +14,7 @@ const OffersArea = () => {
 
 					<div className="col-lg-6 col-md-6 p-0">
 						<div className="business-content">
-							<h3>Save up to 30% when you buy small business insurance in online</h3>
+							<h3>Save up to 10% when you buy small business insurance in online</h3>
 
                             <Link href="/contact">
                                 <a className="default-btn active ml-0">
@@ -22,7 +22,7 @@ const OffersArea = () => {
                                 </a>
                             </Link>
 
-							<p>Call Us Today: <br /> +82546-564-234</p>
+							<p>Call Us Today: <br /> +19258</p>
 						</div>
 					</div>
 				</div>

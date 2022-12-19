@@ -146,19 +146,18 @@ const ContactForm = () => {
 								<li>
 									<i className="flaticon-maps-and-flags"></i>
 									Location:
-									<span>123, Western Road, Melbourne Australia</span>
+									<span>59, Abdul Aziz Al Saud St., Manial El Rowda P.O. Box 8 Manial El Roda South, Cairo, Egypt</span>
 								</li>
 								<li>
 									<i className="flaticon-call"></i>
 									Call Us:
-									<a href="tel:+0(321)984754">+0 (321) 984 754 <br /> +987-9877-7865</a>
+									<a href="tel:+0(321)984754">19258</a>
 								</li>
 								<li>
 									<i className="flaticon-email"></i>
 									Email Us:
-									<a href="mailto:hello@flexa.com">
-										hello@flexa.com <br />
-										info@flexa.com
+									<a href="mailto:Otic@alfuttaim.com">
+									Otic@alfuttaim.com
 									</a>
 								</li>
 							</ul>

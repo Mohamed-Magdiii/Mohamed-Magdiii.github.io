@@ -45,7 +45,7 @@ export default class GetAFreeQuoteFormStyleTwo extends Component {
                                     <li>
                                         <i className="flaticon-email"></i>
                                         <h3>Mail Us For Information</h3>
-                                        <p>hello@flexa.com</p>
+                                        <p>Otic@alfuttaim.com</p>
                                     </li>
                                 </ul>
                             </div>

@@ -21,11 +21,9 @@ const OurVision = () => {
 							<div className="col-lg-6">
 								<div className="vision-content">
 									<span>Our Vision</span>
-									<h2>We are Committed to Help Clients to Reach The Goals</h2>
+									<h2>Our Vision to Help Clients to Reach The Goals</h2>
 
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>	
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.</p>
+									<p>We have started our operation in Egypt in 2009 and are writing all lines of non-life business Including medical. Orient Takaful Insurance Egypt is now ranked No.1 in Takaful market & No.4 in the Egyptian Market Non-life insurance market.</p>
 
 									<div className="vision-list">
 										<ul>
@@ -35,23 +33,7 @@ const OurVision = () => {
 											</li>
 											<li>
 												<i className="bx bx-chevrons-right"></i>
-												Fast Application
-											</li>
-											<li>
-												<i className="bx bx-chevrons-right"></i>
-												Flexible Insurance
-											</li>
-											<li>
-												<i className="bx bx-chevrons-right"></i>
-												No Brokers, No Upselling
-											</li>
-											<li>
-												<i className="bx bx-chevrons-right"></i>
-												Investment Planning
-											</li>
-											<li>
-												<i className="bx bx-chevrons-right"></i>
-												Professional Advisor
+												Save Money
 											</li>
 										</ul>
 									</div>

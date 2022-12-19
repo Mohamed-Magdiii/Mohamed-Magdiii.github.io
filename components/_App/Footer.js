@@ -3,7 +3,11 @@ import Link from 'next/link';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
+    const [email, setEmail] = React.useState()
+    const  handleSubmit = (e) => { 
+        e.preventDefault()
+        console.log(email)
+      }
     return (
         <>
             <footer className="footer-top-area pt-100 pb-70">
@@ -49,23 +53,23 @@ const Footer = () => {
                                     <li>
                                         <i className="flaticon-call"></i>
                                         <span>Hotline:</span> 
-                                        <a href="tel:+822456974">
-                                            Phone: +822456974
+                                        <a href="tel:+19258">
+                                            Phone: 19258
                                         </a>
                                     </li>
                                     
                                     <li>
                                         <i className="flaticon-email"></i>
                                         <span>Email:</span> 
-                                        <a href="mailto:hello@flexa.com">
-                                            hello@flexa.com
+                                        <a href="mailto:Otic@alfuttaim.com">
+                                            Otic@alfuttaim.com
                                         </a>
                                     </li>
                                     
                                     <li>
                                         <i className="flaticon-maps-and-flags"></i>
                                         <span>Address:</span> 
-                                        123, Western Road, Melbourne Australia
+                                        59, Abdul Aziz Al Saud St., Manial El Rowda P.O. Box 8 Manial El Roda South, Cairo, Egypt
                                     </li>
                                 </ul>
                             </div>
@@ -117,9 +121,9 @@ const Footer = () => {
                                 <p className="newsletter-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
 
                                 <div className="subscribe-wrap">
-                                    <form className="newsletter-form">
-                                        <input type="email" className="form-control" placeholder="Enter Your Email" name="email" required />
-                                        <button className="default-btn" type="submit">
+                                    <form className="newsletter-form" >
+                                        <input type="email" className="form-control" placeholder="Enter Your Email" name="email"  onChange={(e)=>{setEmail(e.target.value)}}  required />
+                                        <button className="default-btn" type="submit"  onClick={(e) => handleSubmit(e)} >
                                             Subscribe
                                         </button>
                                     </form>
@@ -133,7 +137,7 @@ const Footer = () => {
             <div className="footer-bottom-area footer-bottom-electronics-area">
                 <div className="container">
                     <div className="copy-right">
-                        <p>Copyright &copy;{currentYear} Flexa Designed By <a href="https://envytheme.com/" target="blank">EnvyTheme</a></p>
+                        <p>Copyright &copy;{currentYear} Orient</p>
                     </div>
                 </div>
             </div>

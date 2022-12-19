@@ -1,8 +1,13 @@
 import React from 'react';
 import Link from '../../utils/ActiveLink';
 import TopHeader from './TopHeader';
+import  useTranslation  from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 const NavbarTwo = () => {
+
+    const router= useRouter()
+    const {t} = useTranslation("common")
     const [menu, setMenu] = React.useState(true)
     const [sidebarModal, setSidebar] = React.useState(false)
     const [searchModal, setSearch] = React.useState(false)
@@ -43,10 +48,12 @@ const NavbarTwo = () => {
                             <div className="container">
                                 <Link href="/">
                                     <a onClick={toggleNavbar} className="navbar-brand">
-                                        <img src="/images/logo.png" alt="logo" />
+                                    {
+                                    router.locale === "ar" ? <img src="/images/logo-ar.png" alt="logo" width={150} height={50}/> : <img src="/images/logo.png" alt="logo" width={150} height={50} />
+                                    }
                                     </a>
                                 </Link>
-
+{/* 
                                 <button 
                                     onClick={toggleNavbar} 
                                     className={classTwo}
@@ -56,22 +63,23 @@ const NavbarTwo = () => {
                                     aria-controls="navbarSupportedContent" 
                                     aria-expanded="false" 
                                     aria-label="Toggle navigation"
-                                >
+                                > 
+                                
                                     <span className="icon-bar top-bar"></span>
                                     <span className="icon-bar middle-bar"></span>
                                     <span className="icon-bar bottom-bar"></span>
-                                </button>
+                                </button> */}
 
                                 <div className={classOne} id="navbarSupportedContent">
                                     <ul className="navbar-nav m-auto">
                                         <li className="nav-item">
-                                            <Link href="#" activeClassName="active">
-                                                <a onClick={e => e.preventDefault()} className="nav-link">
-                                                    Home <i className='bx bx-chevron-down'></i>
+                                            <Link href="/" activeClassName="active">
+                                                <a  className="nav-link">
+                                                    {t("home")} 
                                                 </a>
                                             </Link>
 
-                                            <ul className="dropdown-menu">
+                                            {/* <ul className="dropdown-menu">
                                                 <li className="nav-item">
                                                     <Link href="/" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">Home One</a>
@@ -107,7 +115,7 @@ const NavbarTwo = () => {
                                                         <a onClick={toggleNavbar} className="nav-link">Home Six</a>
                                                     </Link>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
 
                                         <li className="nav-item">
@@ -130,19 +138,19 @@ const NavbarTwo = () => {
                                                     </Link>
                                                 </li>
 
-                                                <li className="nav-item">
+                                                {/* <li className="nav-item">
                                                     <Link href="/pricing" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">Pricing</a>
                                                     </Link>
-                                                </li>
+                                                </li> */}
 
-                                                <li className="nav-item">
+                                                {/* <li className="nav-item">
                                                     <Link href="/testimonials" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">Testimonials</a>
                                                     </Link>
-                                                </li>
+                                                </li> */}
 
-                                                <li className="nav-item">
+                                                {/* <li className="nav-item">
                                                     <Link href="#">
                                                         <a onClick={e => e.preventDefault()} className="nav-link">
                                                             User <i className='bx bx-chevron-down'></i>
@@ -168,7 +176,7 @@ const NavbarTwo = () => {
                                                             </Link>
                                                         </li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
 
                                                 <li className="nav-item">
                                                     <Link href="/faq" activeClassName="active">
@@ -176,11 +184,11 @@ const NavbarTwo = () => {
                                                     </Link>
                                                 </li>
 
-                                                <li className="nav-item">
+                                                {/* <li className="nav-item">
                                                     <Link href="/coming-soon" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">Coming Soon</a>
                                                     </Link>
-                                                </li>
+                                                </li> */}
 
                                                 <li className="nav-item">
                                                     <Link href="/terms-conditions" activeClassName="active">
@@ -194,11 +202,11 @@ const NavbarTwo = () => {
                                                     </Link>
                                                 </li>
 
-                                                <li className="nav-item">
+                                                {/* <li className="nav-item">
                                                     <Link href="/404" activeClassName="active">
                                                         <a onClick={toggleNavbar} className="nav-link">404 Error Page</a>
                                                     </Link>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </li>
 
@@ -241,8 +249,7 @@ const NavbarTwo = () => {
                                                 </li>
                                             </ul>
                                         </li>
-
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <Link href="#" activeClassName="active">
                                                 <a onClick={e => e.preventDefault()} className="nav-link">
                                                     Portfolio <i className='bx bx-chevron-down'></i>
@@ -274,9 +281,9 @@ const NavbarTwo = () => {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
 
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <Link href="#">
                                                 <a onClick={e => e.preventDefault()} className="nav-link">
                                                     Blog <i className='bx bx-chevron-down'></i>
@@ -308,7 +315,7 @@ const NavbarTwo = () => {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
 
                                         <li className="nav-item">
                                             <Link href="/contact" activeClassName="active">
@@ -319,12 +326,12 @@ const NavbarTwo = () => {
                                 </div>
 
                                 <div className="others-option">
-                                    <div className="option-item">
+                                    {/* <div className="option-item">
                                         <i className="search-btn bx bx-search" onClick={e => {
                                             e.preventDefault(); 
                                             toggleSearchModal()
                                         }}></i>
-                                    </div>
+                                    </div> */}
 
                                     <div className="subscribe">
                                         <Link href="/contact">
@@ -384,37 +391,25 @@ const NavbarTwo = () => {
                             <div className="modal-header">
                                 <h2 className="modal-title">
                                     <Link href="/">
-                                        <a><img src="/images/logo2.png" alt="Logo" /></a>
+                                        <a><img src="/images/logo.png" alt="Logo" width={100} height={100} /></a>
                                     </Link>
                                 </h2>
-
                                 <button type="button" className="close" onClick={e => {e.preventDefault(); toggleSidebarModal()}}>
                                     <span aria-hidden="true">
                                         <i className="bx bx-x"></i>
                                     </span>
                                 </button>
                             </div>
-
                             <div className="modal-body">
                                 <div className="sidebar-modal-widget">
                                     <h3 className="title">About Us</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur.</p>
+                                    <p>Orient Takaful Insurance Egypt is an affiliate company of the UAE based Orient Insurance PJSC which is the market leader in UAE and operating in 7 countries and 100% owned by Al Futtaim business group. Orient Takaful Insurance Egypt is an Egyptian shareholding company subject to the provisions of Law No. 10 of 1981 and its amendments and has a license No. (30) from the General Authority for Financial Control.</p>
                                 </div>
 
                                 <div className="sidebar-modal-widget">
                                     <h3 className="title">Additional Links</h3>
 
                                     <ul>
-                                        <li>
-                                            <Link href="/sign-up">
-                                                <a>Sign Up</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/log-in">
-                                                <a>Log In</a>
-                                            </Link>
-                                        </li>
                                         <li>
                                             <Link href="/faq">
                                                 <a>FAQ</a>
@@ -430,17 +425,17 @@ const NavbarTwo = () => {
                                         <li>
                                             <i className="bx bx-location-plus"></i>
                                             Address
-                                            <span>123, Western Road, Melbourne Australia</span>
+                                            <span>59, Abdul Aziz Al Saud St., Manial El Rowda P.O. Box 8 Manial El Roda South, Cairo, Egypt</span>
                                         </li>
                                         <li>
                                             <i className="bx bx-envelope"></i>
                                             Email
-                                            <a href="mailto:hello@flexa.com">hello@flexa.com</a>
+                                            <a href="mailto:Otic@alfuttaim.com">Otic@alfuttaim.com</a>
                                         </li>
                                         <li>
                                             <i className="bx bxs-phone-call"></i>
                                             Phone
-                                            <a href="tel:+822456974">+822456974</a>
+                                            <a href="tel:19258">19258</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -486,3 +481,6 @@ const NavbarTwo = () => {
 }
 
 export default NavbarTwo;
+
+
+

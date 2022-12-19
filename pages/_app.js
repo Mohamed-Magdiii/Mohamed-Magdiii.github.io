@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect,useState} from "react";
 import AOS from "aos";
 import "../node_modules/aos/dist/aos.css";
 import "../styles/bootstrap.min.css";
@@ -13,15 +13,18 @@ import {useRouter} from 'next/router'
 // Global Style
 import "../styles/style.css";
 import "../styles/responsive.css";
-// import '../styles/rtl.css'
+// import style from '../styles/rtl.css'
 
 import Layout from "../components/_App/Layout";
-
 const MyApp = ({ Component, pageProps }) => {
+  const [rtlStyle , setRtlStyle] = useState();
   const router = useRouter();
   React.useEffect(() => {
     AOS.init();
   }, []);
+
+
+  
   useEffect(()=>{
     handleStyle()
   },[router.locale])

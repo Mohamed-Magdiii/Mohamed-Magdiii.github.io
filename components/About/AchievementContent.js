@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-// import FsLightbox from 'fslightbox-react';
+import FsLightbox from 'fslightbox-react';
 import Link from "next/link";
 
 const AchievementContent = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      {/* <FsLightbox
+      <FsLightbox
         toggler={ toggler }
         sources={ [
-          'https://www.youtube.com/embed/bk7McNUjWgw'
+          'https://www.youtube.com/watch?v=_oSnjsRJReo'
         ] }
-      /> */}
+      />
  
       <div className="achievement-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="video-img">
-                <img src="/images/video-img.jpg" alt="Image" />
+                <img src="/images/about-image-7.jpg" alt="Image" />
 
                 <div className="video">
                   <div
@@ -37,15 +37,7 @@ const AchievementContent = () => {
                 <h2>We have Achieved Many National Award For Our Success</h2>
 
                 <p>
-                  Lorem ipsum dolor commod sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. ipsum suspendisse ultrices gravida. Risus commod
-                  o viverra maecenas.
-                </p>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Effective June 21, 2019, AM Best has assigned an FSR of A (Excellent) and a Long-Term ICR of “a+” to Orient Takaful Insurance Company (S.A.E.) (Orient Takaful) (Egypt), a subsidiary of Orient. The outlook assigned to these ratings is stable. The ratings reflect Orient’s balance sheet strength, which AM Best categorizes as very strong, as well as its very strong operating performance, neutral business profile and appropriate enterprise risk management.
                 </p>
 
                 <Link href="/contact">
