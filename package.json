@@ -7,7 +7,7 @@
         "dev": "next dev",
         "build": "next build ",
         "start": "next start",
-        "deploy": "npm run clean && npm run build && next export -o dist/"
+        "deploy": "npm run clean && npm run build"
     },
     "author": "EnvyTheme",
     "license": "ISC",
